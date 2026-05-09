@@ -24,11 +24,11 @@
 ├── notebooks/
 │   └── week1.ipynb                 
 ├── outputs/
-│   ├── Parizat_week1day1_data.json
-│   ├── Parizat_week1day2_eda.json
-│   ├── Parizat_week1day3_features.json
-│   ├── Parizat_week1day4_models.json
-│   ├── Parizat_week1day5_eval.json
+│   ├── day1.json
+│   ├── day2.json
+│   ├── day3.json
+│   ├── day4.json
+│   ├── day5.json
 │   ├── day6.json
 │   └── plots/                          
 ├── models/
