@@ -51,11 +51,11 @@ ml-ramp-up-week1/
 
 | Day | Topic | Output |
 |-----|-------|--------|
-| 1 | Data Understanding & Repository Setup | `day1_data.json` |
-| 2 | Exploratory Data Analysis | `day2_eda.json` + 5 plots |
-| 3 | Feature Engineering | `day3_features.json` + scaling plot |
-| 4 | Model Training & Prediction Logging | `day4_models.json` + 2 plots |
-| 5 | Evaluation & Performance Metrics | `day5_eval.json` + 5 plots |
+| 1 | Data Understanding & Repository Setup | `day1.json` |
+| 2 | Exploratory Data Analysis | `day2.json` + 5 plots |
+| 3 | Feature Engineering | `day3.json` + scaling plot |
+| 4 | Model Training & Prediction Logging | `day4.json` + 2 plots |
+| 5 | Evaluation & Performance Metrics | `day5.json` + 5 plots |
 | 6 | Final Integration & Pipeline | `day6.json` + 5 .pkl files |
 
 ---
