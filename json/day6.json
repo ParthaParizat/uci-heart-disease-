@@ -1,0 +1,177 @@
+{
+    "dataset": "UCI Heart Disease (Cleveland)",
+    "day": "Week 1, Day 6",
+    "author": "Parizat_week1day6",
+    "pipeline_structure": {
+        "steps": [
+            "StandardScaler",
+            "Classifier"
+        ],
+        "advantage": "Leakage-proof: scaler fitted only on train fold during CV",
+        "models_in_pipeline": [
+            "LogisticRegression",
+            "DecisionTree",
+            "RandomForest",
+            "KNN",
+            "SVM"
+        ]
+    },
+    "pipeline_test_metrics": {
+        "LogisticRegression": {
+            "accuracy": 0.9,
+            "precision": 1.0,
+            "recall": 0.7857,
+            "f1_score": 0.88,
+            "roc_auc": 0.9676
+        },
+        "DecisionTree": {
+            "accuracy": 0.8333,
+            "precision": 0.95,
+            "recall": 0.6786,
+            "f1_score": 0.7917,
+            "roc_auc": 0.8365
+        },
+        "RandomForest": {
+            "accuracy": 0.85,
+            "precision": 0.9524,
+            "recall": 0.7143,
+            "f1_score": 0.8163,
+            "roc_auc": 0.9464
+        },
+        "KNN": {
+            "accuracy": 0.9,
+            "precision": 0.9583,
+            "recall": 0.8214,
+            "f1_score": 0.8846,
+            "roc_auc": 0.9559
+        },
+        "SVM": {
+            "accuracy": 0.8833,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1_score": 0.8571,
+            "roc_auc": 0.9286
+        }
+    },
+    "pipeline_cv_metrics": {
+        "LogisticRegression": {
+            "cv_accuracy": {
+                "mean": 0.8455,
+                "std": 0.0455
+            },
+            "cv_recall": {
+                "mean": 0.7966,
+                "std": 0.0851
+            },
+            "cv_roc_auc": {
+                "mean": 0.9068,
+                "std": 0.0506
+            }
+        },
+        "DecisionTree": {
+            "cv_accuracy": {
+                "mean": 0.7747,
+                "std": 0.0466
+            },
+            "cv_recall": {
+                "mean": 0.7524,
+                "std": 0.1013
+            },
+            "cv_roc_auc": {
+                "mean": 0.8506,
+                "std": 0.0664
+            }
+        },
+        "RandomForest": {
+            "cv_accuracy": {
+                "mean": 0.8422,
+                "std": 0.0594
+            },
+            "cv_recall": {
+                "mean": 0.7892,
+                "std": 0.0678
+            },
+            "cv_roc_auc": {
+                "mean": 0.8994,
+                "std": 0.0507
+            }
+        },
+        "KNN": {
+            "cv_accuracy": {
+                "mean": 0.8219,
+                "std": 0.0419
+            },
+            "cv_recall": {
+                "mean": 0.7894,
+                "std": 0.0628
+            },
+            "cv_roc_auc": {
+                "mean": 0.8662,
+                "std": 0.0615
+            }
+        },
+        "SVM": {
+            "cv_accuracy": {
+                "mean": 0.8151,
+                "std": 0.0531
+            },
+            "cv_recall": {
+                "mean": 0.7669,
+                "std": 0.0798
+            },
+            "cv_roc_auc": {
+                "mean": 0.8822,
+                "std": 0.0638
+            }
+        }
+    },
+    "best_pipeline": {
+        "by_f1": "KNN",
+        "by_recall": "KNN",
+        "by_auc": "LogisticRegression"
+    },
+    "saved_model_paths": {
+        "LogisticRegression": "../models/pipeline_logisticregression.pkl",
+        "DecisionTree": "../models/pipeline_decisiontree.pkl",
+        "RandomForest": "../models/pipeline_randomforest.pkl",
+        "KNN": "../models/pipeline_knn.pkl",
+        "SVM": "../models/pipeline_svm.pkl"
+    },
+    "issue_log_summary": [
+        {
+            "issue": "Data leakage risk",
+            "status": "Resolved"
+        },
+        {
+            "issue": "Class ordering in OHE",
+            "status": "Resolved"
+        },
+        {
+            "issue": "Decision Tree overfitting",
+            "status": "Resolved"
+        },
+        {
+            "issue": "Small dataset size",
+            "status": "Resolved"
+        },
+        {
+            "issue": "Outliers in chol and trestbps",
+            "status": "Resolved"
+        }
+    ],
+    "plots_generated": [
+        "class_distribution.png",
+        "histograms_numerical.png",
+        "boxplots_numerical.png",
+        "categorical_countplots.png",
+        "correlation_heatmap.png",
+        "scaling_comparison.png",
+        "feature_importances.png",
+        "model_accuracy_comparison.png",
+        "confusion_matrices_all.png",
+        "roc_curves_all.png",
+        "metrics_heatmap.png",
+        "cv_mean_std.png",
+        "day6_pipeline_comparison.png"
+    ]
+}

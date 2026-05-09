@@ -1,0 +1,96 @@
+{
+    "dataset": "UCI Heart Disease (Cleveland)",
+    "day": "Week 1, Day 1",
+    "author": "Parizat_week1day1",
+    "shape": {
+        "rows": 297,
+        "columns": 14
+    },
+    "target_column": "condition",
+    "target_classes": {
+        "0": "No Heart Disease",
+        "1": "Heart Disease Present"
+    },
+    "target_distribution": {
+        "no_disease": 160,
+        "heart_disease": 137
+    },
+    "features": {
+        "all": [
+            "age",
+            "sex",
+            "cp",
+            "trestbps",
+            "chol",
+            "fbs",
+            "restecg",
+            "thalach",
+            "exang",
+            "oldpeak",
+            "slope",
+            "ca",
+            "thal"
+        ],
+        "count": 13,
+        "numerical": [
+            "age",
+            "trestbps",
+            "chol",
+            "thalach",
+            "oldpeak"
+        ],
+        "categorical": [
+            "sex",
+            "cp",
+            "fbs",
+            "restecg",
+            "exang",
+            "slope",
+            "ca",
+            "thal"
+        ]
+    },
+    "missing_values": {
+        "age": 0,
+        "sex": 0,
+        "cp": 0,
+        "trestbps": 0,
+        "chol": 0,
+        "fbs": 0,
+        "restecg": 0,
+        "thalach": 0,
+        "exang": 0,
+        "oldpeak": 0,
+        "slope": 0,
+        "ca": 0,
+        "thal": 0,
+        "condition": 0
+    },
+    "basic_stats": {
+        "age": {
+            "min": 29.0,
+            "max": 77.0,
+            "mean": 54.54
+        },
+        "trestbps": {
+            "min": 94.0,
+            "max": 200.0,
+            "mean": 131.69
+        },
+        "chol": {
+            "min": 126.0,
+            "max": 564.0,
+            "mean": 247.35
+        },
+        "thalach": {
+            "min": 71.0,
+            "max": 202.0,
+            "mean": 149.6
+        },
+        "oldpeak": {
+            "min": 0.0,
+            "max": 6.2,
+            "mean": 1.06
+        }
+    }
+}

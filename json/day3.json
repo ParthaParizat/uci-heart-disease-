@@ -1,0 +1,58 @@
+{
+    "dataset": "UCI Heart Disease (Cleveland)",
+    "day": "Week 1, Day 3",
+    "author": "Parizat_week1day3",
+    "cleaning": {
+        "missing_dropped": 0,
+        "duplicates_dropped": 0
+    },
+    "outlier_capping": {
+        "chol": {
+            "capped_upper": 373.5,
+            "original_max": 564.0
+        },
+        "trestbps": {
+            "capped_upper": 170.0,
+            "original_max": 200.0
+        }
+    },
+    "scaling": {
+        "chosen": "StandardScaler",
+        "applied_to": [
+            "age",
+            "trestbps",
+            "chol",
+            "thalach",
+            "oldpeak",
+            "hr_reserve"
+        ],
+        "reason": "Features are approximately normal; works well for LR and SVM"
+    },
+    "encoding": {
+        "one_hot_encoded": [
+            "cp",
+            "restecg",
+            "slope",
+            "thal"
+        ],
+        "binary_unchanged": [
+            "sex",
+            "fbs",
+            "exang"
+        ],
+        "ordinal_kept": [
+            "ca"
+        ]
+    },
+    "engineered_features": {
+        "age_group": 0.2776,
+        "chol_risk": 0.1263,
+        "bp_category": 0.0727,
+        "hr_reserve": 0.3638,
+        "high_risk_combo": 0.3259
+    },
+    "final_shape": {
+        "rows": 297,
+        "features": 27
+    }
+}

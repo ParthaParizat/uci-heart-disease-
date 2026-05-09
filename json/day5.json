@@ -1,0 +1,424 @@
+{
+    "dataset": "UCI Heart Disease (Cleveland)",
+    "day": "Week 1, Day 5",
+    "author": "Parizat_week1day5",
+    "leakage_prevention": "Scaler fitted on X_train only; X_test transformed with train stats",
+    "test_set_metrics": {
+        "LogisticRegression": {
+            "accuracy": 0.9,
+            "precision": 1.0,
+            "recall": 0.7857,
+            "f1_score": 0.88,
+            "roc_auc": 0.9688,
+            "confusion_matrix": [
+                [
+                    32,
+                    0
+                ],
+                [
+                    6,
+                    22
+                ]
+            ],
+            "TP": 22,
+            "TN": 32,
+            "FP": 0,
+            "FN": 6
+        },
+        "DecisionTree": {
+            "accuracy": 0.8333,
+            "precision": 0.95,
+            "recall": 0.6786,
+            "f1_score": 0.7917,
+            "roc_auc": 0.8365,
+            "confusion_matrix": [
+                [
+                    31,
+                    1
+                ],
+                [
+                    9,
+                    19
+                ]
+            ],
+            "TP": 19,
+            "TN": 31,
+            "FP": 1,
+            "FN": 9
+        },
+        "RandomForest": {
+            "accuracy": 0.85,
+            "precision": 0.9524,
+            "recall": 0.7143,
+            "f1_score": 0.8163,
+            "roc_auc": 0.9487,
+            "confusion_matrix": [
+                [
+                    31,
+                    1
+                ],
+                [
+                    8,
+                    20
+                ]
+            ],
+            "TP": 20,
+            "TN": 31,
+            "FP": 1,
+            "FN": 8
+        },
+        "KNN": {
+            "accuracy": 0.8333,
+            "precision": 0.9091,
+            "recall": 0.7143,
+            "f1_score": 0.8,
+            "roc_auc": 0.8973,
+            "confusion_matrix": [
+                [
+                    30,
+                    2
+                ],
+                [
+                    8,
+                    20
+                ]
+            ],
+            "TP": 20,
+            "TN": 30,
+            "FP": 2,
+            "FN": 8
+        },
+        "SVM": {
+            "accuracy": 0.85,
+            "precision": 0.9524,
+            "recall": 0.7143,
+            "f1_score": 0.8163,
+            "roc_auc": 0.942,
+            "confusion_matrix": [
+                [
+                    31,
+                    1
+                ],
+                [
+                    8,
+                    20
+                ]
+            ],
+            "TP": 20,
+            "TN": 31,
+            "FP": 1,
+            "FN": 8
+        }
+    },
+    "cross_validation": {
+        "method": "StratifiedKFold",
+        "n_splits": 5,
+        "results": {
+            "LogisticRegression": {
+                "accuracy": {
+                    "mean": 0.8489,
+                    "std": 0.0562,
+                    "folds": [
+                        0.8167,
+                        0.7667,
+                        0.8475,
+                        0.8814,
+                        0.9322
+                    ]
+                },
+                "precision": {
+                    "mean": 0.8798,
+                    "std": 0.0839,
+                    "folds": [
+                        0.9048,
+                        0.7333,
+                        0.8462,
+                        0.9545,
+                        0.96
+                    ]
+                },
+                "recall": {
+                    "mean": 0.7892,
+                    "std": 0.0678,
+                    "folds": [
+                        0.6786,
+                        0.7857,
+                        0.8148,
+                        0.7778,
+                        0.8889
+                    ]
+                },
+                "f1": {
+                    "mean": 0.8289,
+                    "std": 0.0591,
+                    "folds": [
+                        0.7755,
+                        0.7586,
+                        0.8302,
+                        0.8571,
+                        0.9231
+                    ]
+                },
+                "roc_auc": {
+                    "mean": 0.9156,
+                    "std": 0.0407,
+                    "folds": [
+                        0.8504,
+                        0.8895,
+                        0.9259,
+                        0.9572,
+                        0.9549
+                    ]
+                }
+            },
+            "DecisionTree": {
+                "accuracy": {
+                    "mean": 0.768,
+                    "std": 0.0462,
+                    "folds": [
+                        0.7,
+                        0.7333,
+                        0.7797,
+                        0.7966,
+                        0.8305
+                    ]
+                },
+                "precision": {
+                    "mean": 0.7528,
+                    "std": 0.0607,
+                    "folds": [
+                        0.6786,
+                        0.7,
+                        0.85,
+                        0.7778,
+                        0.7576
+                    ]
+                },
+                "recall": {
+                    "mean": 0.7524,
+                    "std": 0.1013,
+                    "folds": [
+                        0.6786,
+                        0.75,
+                        0.6296,
+                        0.7778,
+                        0.9259
+                    ]
+                },
+                "f1": {
+                    "mean": 0.7474,
+                    "std": 0.0532,
+                    "folds": [
+                        0.6786,
+                        0.7241,
+                        0.7234,
+                        0.7778,
+                        0.8333
+                    ]
+                },
+                "roc_auc": {
+                    "mean": 0.8483,
+                    "std": 0.0661,
+                    "folds": [
+                        0.7606,
+                        0.7946,
+                        0.8906,
+                        0.8501,
+                        0.9456
+                    ]
+                }
+            },
+            "RandomForest": {
+                "accuracy": {
+                    "mean": 0.8455,
+                    "std": 0.0574,
+                    "folds": [
+                        0.75,
+                        0.8167,
+                        0.8814,
+                        0.8644,
+                        0.9153
+                    ]
+                },
+                "precision": {
+                    "mean": 0.8655,
+                    "std": 0.0662,
+                    "folds": [
+                        0.76,
+                        0.8148,
+                        0.9167,
+                        0.913,
+                        0.9231
+                    ]
+                },
+                "recall": {
+                    "mean": 0.7892,
+                    "std": 0.0678,
+                    "folds": [
+                        0.6786,
+                        0.7857,
+                        0.8148,
+                        0.7778,
+                        0.8889
+                    ]
+                },
+                "f1": {
+                    "mean": 0.8251,
+                    "std": 0.064,
+                    "folds": [
+                        0.717,
+                        0.8,
+                        0.8627,
+                        0.84,
+                        0.9057
+                    ]
+                },
+                "roc_auc": {
+                    "mean": 0.9,
+                    "std": 0.0495,
+                    "folds": [
+                        0.827,
+                        0.8571,
+                        0.9363,
+                        0.9225,
+                        0.9572
+                    ]
+                }
+            },
+            "KNN": {
+                "accuracy": {
+                    "mean": 0.8016,
+                    "std": 0.043,
+                    "folds": [
+                        0.7833,
+                        0.7333,
+                        0.8644,
+                        0.8136,
+                        0.8136
+                    ]
+                },
+                "precision": {
+                    "mean": 0.802,
+                    "std": 0.0701,
+                    "folds": [
+                        0.7778,
+                        0.7,
+                        0.913,
+                        0.8333,
+                        0.7857
+                    ]
+                },
+                "recall": {
+                    "mean": 0.7667,
+                    "std": 0.0271,
+                    "folds": [
+                        0.75,
+                        0.75,
+                        0.7778,
+                        0.7407,
+                        0.8148
+                    ]
+                },
+                "f1": {
+                    "mean": 0.7824,
+                    "std": 0.0384,
+                    "folds": [
+                        0.7636,
+                        0.7241,
+                        0.84,
+                        0.7843,
+                        0.8
+                    ]
+                },
+                "roc_auc": {
+                    "mean": 0.8727,
+                    "std": 0.0284,
+                    "folds": [
+                        0.8421,
+                        0.8415,
+                        0.9028,
+                        0.8698,
+                        0.9074
+                    ]
+                }
+            },
+            "SVM": {
+                "accuracy": {
+                    "mean": 0.8353,
+                    "std": 0.0376,
+                    "folds": [
+                        0.7833,
+                        0.8,
+                        0.8475,
+                        0.8644,
+                        0.8814
+                    ]
+                },
+                "precision": {
+                    "mean": 0.8774,
+                    "std": 0.0565,
+                    "folds": [
+                        0.8571,
+                        0.7857,
+                        0.875,
+                        0.9524,
+                        0.9167
+                    ]
+                },
+                "recall": {
+                    "mean": 0.7524,
+                    "std": 0.0596,
+                    "folds": [
+                        0.6429,
+                        0.7857,
+                        0.7778,
+                        0.7407,
+                        0.8148
+                    ]
+                },
+                "f1": {
+                    "mean": 0.808,
+                    "std": 0.0442,
+                    "folds": [
+                        0.7347,
+                        0.7857,
+                        0.8235,
+                        0.8333,
+                        0.8627
+                    ]
+                },
+                "roc_auc": {
+                    "mean": 0.8964,
+                    "std": 0.0517,
+                    "folds": [
+                        0.8103,
+                        0.8672,
+                        0.9178,
+                        0.9329,
+                        0.9537
+                    ]
+                }
+            }
+        }
+    },
+    "best_models": {
+        "by_recall": {
+            "model": "LogisticRegression",
+            "recall": 0.7857
+        },
+        "by_f1": {
+            "model": "LogisticRegression",
+            "f1_score": 0.88
+        },
+        "by_roc_auc": {
+            "model": "LogisticRegression",
+            "roc_auc": 0.9688
+        }
+    },
+    "metric_explanations": {
+        "recall": "Most critical \u2014 measures how many real disease cases were caught",
+        "precision": "Of predicted disease cases, how many were actually disease",
+        "f1_score": "Harmonic mean of precision and recall",
+        "roc_auc": "Probability that model ranks a disease patient above a healthy one"
+    }
+}

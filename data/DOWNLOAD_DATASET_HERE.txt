@@ -1,0 +1,4 @@
+Download the dataset from Kaggle and place it here:
+https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci
+
+File name: heart_cleveland_upload.csv

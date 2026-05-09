@@ -1,0 +1,95 @@
+{
+    "dataset": "UCI Heart Disease (Cleveland)",
+    "day": "Week 1, Day 2",
+    "author": "Parizat_week1day2",
+    "class_distribution": {
+        "no_disease": 160,
+        "heart_disease": 137,
+        "imbalance_ratio": 1.17
+    },
+    "descriptive_stats": {
+        "age": {
+            "mean": 54.5421,
+            "std": 9.0497,
+            "min": 29.0,
+            "max": 77.0,
+            "median": 56.0
+        },
+        "trestbps": {
+            "mean": 131.6936,
+            "std": 17.7628,
+            "min": 94.0,
+            "max": 200.0,
+            "median": 130.0
+        },
+        "chol": {
+            "mean": 247.3502,
+            "std": 51.9976,
+            "min": 126.0,
+            "max": 564.0,
+            "median": 243.0
+        },
+        "thalach": {
+            "mean": 149.5993,
+            "std": 22.9416,
+            "min": 71.0,
+            "max": 202.0,
+            "median": 153.0
+        },
+        "oldpeak": {
+            "mean": 1.0556,
+            "std": 1.1661,
+            "min": 0.0,
+            "max": 6.2,
+            "median": 0.8
+        }
+    },
+    "target_correlation": {
+        "thal": 0.52,
+        "ca": 0.46,
+        "exang": 0.42,
+        "thalach": -0.42,
+        "oldpeak": 0.42,
+        "cp": 0.41,
+        "slope": 0.33,
+        "sex": 0.28,
+        "age": 0.23,
+        "restecg": 0.17,
+        "trestbps": 0.15,
+        "chol": 0.08,
+        "fbs": 0.0
+    },
+    "outliers": {
+        "age": {
+            "lower_bound": 28.5,
+            "upper_bound": 80.5,
+            "outlier_count": 0
+        },
+        "trestbps": {
+            "lower_bound": 90.0,
+            "upper_bound": 170.0,
+            "outlier_count": 9
+        },
+        "chol": {
+            "lower_bound": 113.5,
+            "upper_bound": 373.5,
+            "outlier_count": 5
+        },
+        "thalach": {
+            "lower_bound": 83.5,
+            "upper_bound": 215.5,
+            "outlier_count": 1
+        },
+        "oldpeak": {
+            "lower_bound": -2.4,
+            "upper_bound": 4.0,
+            "outlier_count": 5
+        }
+    },
+    "observations": [
+        "thalach (max heart rate) is lower in heart disease patients",
+        "cp (chest pain type) shows strong positive correlation with target",
+        "Dataset is approximately balanced \u2014 no resampling needed",
+        "chol has high-value outliers \u2014 will be capped in Day 3"
+    ]
+}

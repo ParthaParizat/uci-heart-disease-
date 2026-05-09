@@ -1,0 +1,24 @@
+Issue 1: Wrong Target Column Name
+  Description : Notebook used TARGET_COLUMN = "target" but downloaded dataset had column named "condition"
+  Fix         : Changed TARGET_COLUMN = "condition" in global config. Since all cells use the variable, one change fixed the entire notebook.
+  Status      : Resolved
+
+Issue 2: Windows Path SyntaxError
+  Description : Windows backslash paths (C:\Users\...) cause unicode escape errors in Python strings
+  Fix         : Added r prefix before path string: r'C:\Users\parij\...' (raw string — ignores escape sequences)
+  Status      : Resolved
+
+Issue 3: Seaborn Palette Dictionary Mismatch
+  Description : Newer seaborn versions treat x-axis integer values as strings internally. palette={0:color, 1:color} fails.
+  Fix         : Replaced palette dict with list: palette=["#2ecc71", "#e74c3c"]. Seaborn maps by position.
+  Status      : Resolved
+
+Issue 4: logs/ Folder Not Found
+  Description : Notebook tried to write ../logs/issue_log.txt but the logs/ directory did not exist on disk
+  Fix         : Added os.makedirs("../logs", exist_ok=True) before the open() call
+  Status      : Resolved
+
+Issue 5: Data Leakage Risk (Caught and Prevented)
+  Description : If StandardScaler is fitted on full dataset before split, test data statistics pollute training
+  Fix         : Split first, then fit scaler only on X_train. In Day 6, used sklearn Pipeline which enforces this automatically.
+  Status      : Resolved
