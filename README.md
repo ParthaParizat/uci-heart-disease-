@@ -19,11 +19,10 @@
 ## Project Structure
 
 ```
-ml-ramp-up-week1/
 ├── data/
-│   └── heart_cleveland_upload.csv       ← dataset (download from Kaggle)
+│   └── heart_cleveland_upload.csv       
 ├── notebooks/
-│   └── week1.ipynb                      ← complete Day 1–6 notebook
+│   └── week1.ipynb                 
 ├── outputs/
 │   ├── Parizat_week1day1_data.json
 │   ├── Parizat_week1day2_eda.json
@@ -31,7 +30,7 @@ ml-ramp-up-week1/
 │   ├── Parizat_week1day4_models.json
 │   ├── Parizat_week1day5_eval.json
 │   ├── day6.json
-│   └── plots/                           ← 13 plots (PNG)
+│   └── plots/                          
 ├── models/
 │   ├── pipeline_logisticregression.pkl
 │   ├── pipeline_decisiontree.pkl
