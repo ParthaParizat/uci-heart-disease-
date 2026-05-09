@@ -101,7 +101,7 @@ Recall is the priority metric — missing a disease case (False Negative) is the
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/ml-ramp-up-week1.git
+git clone git clone https://github.com/ParthaParizat/uci-heart-disease-.git
 cd ml-ramp-up-week1
 
 # 2. Install dependencies
